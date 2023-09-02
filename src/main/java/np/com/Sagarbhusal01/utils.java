@@ -14,7 +14,7 @@ class utils {
 //
     protected boolean IfFileDonotExist(String PathName) {
         File file = new File(PathName);
-        return !file.exists() || !file.isDirectory();
+        return !file.exists() || file.isDirectory();
     }
 
 
