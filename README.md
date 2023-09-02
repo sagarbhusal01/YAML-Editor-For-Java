@@ -18,7 +18,7 @@ key3 : value3
 ```
 
 - --
-- [Download Jar File ](https://github.com/sagarbhusal01/TableBuilder/releases/download/Stable/TableBuilder-v1.01.jar)
+- [Download Jar File ](https://github.com/sagarbhusal01/YAML-Editor-For-Java/releases/download/stable/YAML-1.0.1.jar)
 - --
 
 # How to use it?
