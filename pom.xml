@@ -6,13 +6,39 @@
 
     <groupId>np.com.Sagarbhusal01</groupId>
     <artifactId>YAML</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
+
+
+
+
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>A best package to read and write the yaml file </description>
+    <url>https://github.com/sagarbhusal01/YAML-Editor-For-Java</url>
+
+
+    <developers>
+        <developer>
+            <name>Sagar Bhusal</name>
+            <email>sagar.bhu777@gmail.com</email>
+            <organization>np.com.Sagarbhusal01</organization>
+            <organizationUrl>https://www.sagarbhusal01.com.np</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 
 </project>
