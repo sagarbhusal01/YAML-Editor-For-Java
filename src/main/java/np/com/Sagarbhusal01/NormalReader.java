@@ -22,12 +22,6 @@ class NormalReader {
         StringBuilder AllReadTextData= new StringBuilder();
 
 //
-//
-//
-
-
-
-//
 //        Reading the file of the provided path
 //
         try {
@@ -38,7 +32,11 @@ class NormalReader {
 //
 //                Appending each line into the AllReadTextData which have a return type of string builder
 //
-                AllReadTextData.append(line);
+                if(!line.startsWith("#"))
+                {
+                    AllReadTextData.append(line);
+                }
+
                 // read next line
                     line = reader.readLine();
             }
@@ -58,7 +56,12 @@ class NormalReader {
 //        hello=saga
 //        hi=sometext
 //
+//        or
+//         hello:saga
+///        hi:sometext
+
 //        into
+//
 //        [hello,saga]
 //        [hi,sometext]
 //        and then put that value in the HashMap named Data;
@@ -73,6 +76,10 @@ class NormalReader {
                   {
                       Data.put(Array[i].split("=")[0],Array[i].split("=")[1]);
                    }
+                 else if(Array[i].charAt(j)==':')
+                {
+                    Data.put(Array[i].split(":")[0],Array[i].split(":")[1]);
+                }
             }
 
         }
@@ -80,8 +87,18 @@ class NormalReader {
 //
 //
 //
-return Data;
-        
+        if (Data.isEmpty())
+        {
+            System.out.println("Some error occurred while reading\n" +
+                    "maybe the value must contains statement which is illegal in this case ");
+            return null;
+        }
+        else
+        {
+            return Data;
+        }
+
+
     }
 
 
