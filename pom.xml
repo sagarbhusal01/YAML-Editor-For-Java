@@ -9,16 +9,6 @@
     <version>1.0.3</version>
 
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub sagarbhusal01 Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/sagarbhusal01/YAML-Editor-For-Java</url>
-        </repository>
-    </distributionManagement>
-
-
-
     <name>${project.groupId}:${project.artifactId}</name>
     <description>A best package to read and write the yaml file </description>
     <url>https://github.com/sagarbhusal01/YAML-Editor-For-Java</url>
