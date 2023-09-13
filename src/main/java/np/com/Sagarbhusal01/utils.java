@@ -38,10 +38,10 @@ class utils {
 
 
 
-    protected void WriteToFile(String Data,String PathName)
+    protected void WriteToFile(String Data,String PathName,boolean append)
     {
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(PathName), true));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(PathName), append));
             bw.write(Data);
             bw.newLine();
             bw.close();

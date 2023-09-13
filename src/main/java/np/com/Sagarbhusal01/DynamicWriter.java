@@ -6,7 +6,7 @@ import java.util.Map;
 
 class DynamicWriter {
 
-    protected DynamicWriter(HashMap<String,String> MappedData, String PathName) {
+    protected DynamicWriter(HashMap<String,String> MappedData, String PathName,boolean append) {
 
         utils utils = new utils();
 //
@@ -21,7 +21,7 @@ class DynamicWriter {
 
         for(Map.Entry<String,String> entry: MappedData.entrySet())
         {
-            utils.WriteToFile(entry.getKey()+" : "+entry.getValue(),PathName);
+            utils.WriteToFile(entry.getKey()+" : "+entry.getValue(),PathName,append);
         }
 
     }

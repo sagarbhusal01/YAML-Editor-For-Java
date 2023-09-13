@@ -33,13 +33,13 @@ public class YAML{
 //    the Reader and Writer method checks the Mode configured and call the
 //    respective protected class to operate onto them
 //
-    public void Writer(HashMap<String,String> MappedData,String PathName)
+    public void Writer(HashMap<String,String> MappedData,String PathName,boolean append)
     {
 
         if (config.getMode().equals("normal")) {
-            new NormalWriter(MappedData, PathName);
+            new NormalWriter(MappedData, PathName,append);
         } else {
-            new DynamicWriter(MappedData, PathName);
+            new DynamicWriter(MappedData, PathName,append);
         }
     }
 

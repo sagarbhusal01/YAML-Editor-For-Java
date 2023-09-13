@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 class NormalWriter  {
 
-    protected NormalWriter(HashMap<String,String> MappedData, String PathName) {
+    protected NormalWriter(HashMap<String,String> MappedData, String PathName,boolean append) {
 
         utils utils=new utils();
 //
@@ -16,7 +16,7 @@ class NormalWriter  {
 //
 //        Simply the mapped data can be written into the file without any modification
 //
-        utils.WriteToFile(String.valueOf(MappedData),PathName);
+        utils.WriteToFile(String.valueOf(MappedData),PathName,append);
 
     }
 

@@ -64,11 +64,12 @@ String Path="YAML.yaml";
         MappedData.put("Type2","Awesome2");
         MappedData.put("Type3","Awesome3");
         MappedData.put("Type4","Awesome4");
+        boolean appendOrNot = false;
 ```
 
 -Then pass the data and path into the Writer method
 ```java
-yaml.Writer(MappedData,Path);
+yaml.Writer(MappedData,Path,appendOrNot);
 ```
 - For reading the data from the file create a empty hashmap
 ```java
