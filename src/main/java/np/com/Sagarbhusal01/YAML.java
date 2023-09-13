@@ -39,7 +39,7 @@ public class YAML{
         if (config.getMode().equals("normal")) {
             new NormalWriter(MappedData, PathName,append);
         } else {
-            new DynamicWriter(MappedData, PathName,append);
+            new DynamicWriter(MappedData, PathName);
         }
     }
 
