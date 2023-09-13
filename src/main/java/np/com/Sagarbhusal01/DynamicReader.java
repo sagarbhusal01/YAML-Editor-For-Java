@@ -14,7 +14,7 @@ public class DynamicReader {
 //
 //            listOfEachLine is the ArrayList used for storing the data of each line in the array
 //
-            ArrayList<String> listOfEachLine = new ArrayList<String>();
+            ArrayList<String> listOfEachLine = new ArrayList<>();
 //
 //
 //
