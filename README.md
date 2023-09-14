@@ -11,10 +11,8 @@ There are two main ways you can write data in the yaml file.
 #yaml file comment
         
 {Key1 = value1, key2 = value2, key3 = value3}
-// or 
-{Key1 : value1, key2 : value2, key3 : value3}
-// or 
-{Key1 : "value1", key2 : "value2", key3 : "value3"}
+// or
+{Key1 = "value1", key2 = "value2", key3 = "value3"}
 ```
 - or the dynamic way
 ```java

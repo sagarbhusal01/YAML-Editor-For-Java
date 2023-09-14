@@ -76,10 +76,6 @@ class NormalReader {
                   {
                       Data.put(Array[i].split("=")[0],Array[i].split("=")[1]);
                    }
-                 else if(Array[i].charAt(j)==':')
-                {
-                    Data.put(Array[i].split(":")[0],Array[i].split(":")[1]);
-                }
             }
 
         }
