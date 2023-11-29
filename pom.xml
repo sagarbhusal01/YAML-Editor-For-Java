@@ -23,6 +23,25 @@
         </developer>
     </developers>
 
+
+
+
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/sagarbhusal01/YAML-Editor-For-Java</url>
+        </repository>
+    </distributionManagement>
+
+
+
+
+
+
+
+
     <licenses>
         <license>
             <name>MIT License</name>
