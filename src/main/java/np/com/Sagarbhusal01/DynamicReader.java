@@ -33,8 +33,6 @@ public class DynamicReader {
 //
 //                   Adding the Read line into the arrayList
 //
-
-
                     if (!line.startsWith("#")&&!line.isBlank()) {
                         listOfEachLine.add(line.replaceAll(" ",""));
 
